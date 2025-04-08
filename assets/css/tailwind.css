@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn {
+        @apply relative inline-flex shrink-0 items-center justify-center gap-2 rounded-lg bg-orange px-3 py-2.5 text-center text-base/6 font-medium text-white transition hover:bg-orange/80;
+    }
+    .btn-secondary {
+        @apply relative inline-flex items-center justify-center gap-2 rounded-lg border border-gray/20 bg-transparent px-3 py-2.5 text-center text-base/6 text-primary shadow-[0_1px_2px_0_rgba(113,116,152,.1)] transition hover:bg-primary/5;
+    }
+    .nav-links {
+        @apply relative block text-nowrap px-5 py-2 text-lg font-medium text-primary duration-300 hover:text-secondary lg:inline-flex lg:px-0 lg:py-9;
+    }
+    .nav-links.active {
+        @apply text-secondary;
+    }
+    .footer-links {
+        @apply relative inline-flex font-medium text-gray duration-300 hover:text-secondary;
+    }
+    .form-input,
+    .form-textarea {
+        @apply w-full rounded-lg border-gray/30 bg-transparent px-4 py-3 text-base/5 font-medium text-primary shadow-[0_1px_2px_0_rgba(113,116,152,.1)] transition placeholder:text-gray/50 focus:border-secondary focus:outline-none focus:ring-transparent;
+    }
+    .form-textarea {
+        @apply min-h-12;
+    }
+}
+
+/* Hero slider */
+.hero-swiper .swiper-slide.swiper-slide-active > span {
+    @apply !inset-0 h-full shrink-0 opacity-100;
+}
+.animate-text {
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.hero-swiper .swiper-slide.swiper-slide-active .animate-text {
+    opacity: 1;
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* flip animation */
+.flip:hover {
+    transform: rotateY(180deg);
+}
+
+/* Testimonial swiper */
+.testimonial-slide {
+    @apply flex-[0_0_100%];
+}
+
+/* shopping-cart-table */
+.shopping-cart-table thead th {
+    @apply border-b border-gray/20 p-5 text-center first:rounded-tl-xl first:text-left last:rounded-tr-xl last:text-right;
+}
+.shopping-cart-table tbody td {
+    @apply px-5 py-6 text-center first:text-left last:text-right;
+}
+.shopping-cart-table tbody {
+    @apply divide-y divide-gray/20;
+}

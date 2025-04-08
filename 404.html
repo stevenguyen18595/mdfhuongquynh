@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>404 Error | Crafthica</title>
+        <meta
+            name="description"
+            content="Showcase handmade products with a user-friendly, customizable design."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="404 Error | Crafthica" />
+        <meta
+            property="og:description"
+            content="Showcase handmade products with a user-friendly, customizable design."
+        />
+        <meta
+            property="og:url"
+            content="https://crafthica-html.vercel.app/404.html"
+        />
+        <meta
+            property="og:image"
+            content="https://crafthica-html.vercel.app/assets/images/logo-banner.png"
+        />
+        <!-- Twitter Card Tags -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:site" content="@crafthica" />
+        <meta property="twitter:title" content="404 Error | Crafthica" />
+        <meta
+            property="twitter:description"
+            content="Showcase handmade products with a user-friendly, customizable design."
+        />
+        <meta
+            property="twitter:image"
+            content="https://crafthica-html.vercel.app/assets/images/logo-banner.png"
+        />
+        <meta name="robots" content="index, follow" />
+        <link
+            rel="canonical"
+            href="https://crafthica-html.vercel.app/404.html"
+        />
+        <link rel="icon" type="icon" href="assets/images/favicon.png" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body
+        class="relative flex min-h-screen flex-col bg-gray-light font-dm-sans text-base/6 font-normal text-primary antialiased"
+    >
+        <div
+            class="relative"
+            x-data="{ isLoading: true }"
+            x-init="setTimeout(() => {isLoading = false }, 2000)"
+        >
+            <div
+                id="preloader"
+                x-show="isLoading"
+                class="fixed inset-0 z-[60] flex h-screen w-full overflow-hidden bg-gradient-to-r from-gray-light via-white to-gray-light"
+            >
+                <img
+                    src="assets/images/fast-delivery.gif"
+                    alt="loading"
+                    loading="lazy"
+                    class="screen-loader absolute left-1/2 top-1/2 h-auto w-20 -translate-x-1/2 -translate-y-1/2"
+                />
+            </div>
+        </div>
+        
+        <div
+            class="relative flex min-h-screen flex-col items-center justify-center p-5"
+        >
+            <div class="w-full text-center">
+                <div
+                    class="mb-5 font-clearface-serial text-[100px]/[100px] font-bold tracking-wider text-secondary lg:text-[250px]/[260px]"
+                >
+                    404
+                </div>
+                <h1
+                    class="mb-2.5 text-2xl font-semibold sm:text-3xl lg:mb-5 lg:text-[40px]/[50px]"
+                >
+                    Oops...That link is broken.
+                </h1>
+                <div
+                    class="text-brown mx-auto mb-[30px] max-w-xl space-y-4 text-gray"
+                >
+                    <p>
+                        We couldn't find the page you're looking for. It might
+                        have been moved, renamed, or is temporarily unavailable.
+                        Let's help you get back on track!
+                    </p>
+                </div>
+                <a href="/index.html" class="btn">Return to shop </a>
+            </div>
+        </div>
+
+        <script defer src="assets/js/alpine.min.js"></script>
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "name": "404 Error | Crafthica",
+                "url": "https://crafthica-html.vercel.app/404.html",
+                "description": "Showcase handmade products with a user-friendly, customizable design.",
+                "inLanguage": "en",
+                "image": "https://crafthica-html.vercel.app/assets/images/logo-banner.png",
+                "breadcrumb": {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Home",
+                            "item": "https://crafthica-html.vercel.app"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "404 Error",
+                            "item": "https://crafthica-html.vercel.app/404.html"
+                        }
+                    ]
+                }
+            }
+        </script>
+    </body>
+</html>
