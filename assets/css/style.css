@@ -1816,10 +1816,6 @@ video {
   margin-bottom: 2rem;
 }
 
-.mb-\[30px\]{
-  margin-bottom: 30px;
-}
-
 .ml-2{
   margin-left: 0.5rem;
 }
@@ -2623,8 +2619,8 @@ video {
   background-color: rgb(255 255 255 / 0.6);
 }
 
-.bg-\[url\(\'\/assets\/images\/contact-banner\.jpg\'\)\]{
-  background-image: url('/assets/images/contact-banner.jpg');
+.bg-\[url\(\'\/assets\/images\/contact-banner\.png\'\)\]{
+  background-image: url('/assets/images/contact-banner.png');
 }
 
 .bg-\[url\(\'\/assets\/images\/shophero-banner\.jpg\'\)\]{
@@ -2930,6 +2926,16 @@ video {
   padding-bottom: 2.25rem;
 }
 
+.py-40{
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.py-52{
+  padding-top: 13rem;
+  padding-bottom: 13rem;
+}
+
 .pb-0{
   padding-bottom: 0px;
 }
@@ -3173,6 +3179,10 @@ video {
 
 .underline-offset-4{
   text-underline-offset: 4px;
+}
+
+.underline-offset-0{
+  text-underline-offset: 0px;
 }
 
 .antialiased{
